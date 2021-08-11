@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1095821787538",
+    "project_id": "tijil-brew-crew",
+    "storage_bucket": "tijil-brew-crew.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1095821787538:android:51a4c14dd16481077a414b",
+        "android_client_info": {
+          "package_name": "com.tijil.brew_crew"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1095821787538-g8opq0us90fhrqeq7gcpuch4v67bccd4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmyr9iB6awTnYKZMUuLRy6Xrcc05hAhGY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1095821787538-g8opq0us90fhrqeq7gcpuch4v67bccd4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
