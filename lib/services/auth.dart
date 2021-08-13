@@ -1,14 +1,21 @@
 import 'dart:js_util';
 
 import 'package:brew_crew/models/user.dart';
+import 'package:firebase_auth/firebase_auth.dart' as UserModal;
 import 'package:firebase_auth/firebase_auth.dart';
 
 class AuthService {
   final FirebaseAuth _auth = FirebaseAuth.instance;
 
   // create user object based on firebase user
-  User? _userFromFirebaseUser(FirebaseUser user) {
-    return user != null ? User(uid: user.uid) : null;
+  MyUser? _userFromFirebaseUser(FirebaseUser user) {
+    return user != null ? MyUser(uid: user.uid) : null;
+  }
+
+  // auth change user stream
+  Stream<MyUser?> get user {
+    return _auth.onAuthStateChanged
+        .map((FirebaseUser user) => _userFromFirebaseUser(user));
   }
 
   // sign in anon
